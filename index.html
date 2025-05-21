@@ -7,187 +7,191 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8e4c3;
-    }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8e4c3;
+  }
 
-    header {
-      position: relative;
-      background-color: #7b2e00;
-      padding: 10px 0;
-    }
+  header {
+    position: relative;
+    background-color: #7b2e00;
+    padding: 10px 0;
+  }
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .logo-central {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+  }
+
+  .icone-instagram {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .titulo {
+    text-align: center;
+    background-color: #fbe7c2;
+    padding: 1rem 0;
+  }
+
+  .titulo h1 {
+    margin: 0;
+    color: #732d00;
+    font-size: 2rem;
+  }
+
+  .titulo p {
+    margin: 0.3rem 0 0;
+    color: #444;
+  }
+
+  .imagem-container {
+    position: relative;
+    max-width: 90%;
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .imagem-container img {
+    width: 100%;
+    max-height: 65vh;
+    object-fit: cover;
+    display: block;
+  }
+
+  .texto-sobre-imagem {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .texto-sobre-imagem h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    border-left: 4px solid #732d00;
+    padding-left: 0.5rem;
+  }
+
+  .texto-sobre-imagem a {
+    color: #fbe7c2;
+    text-decoration: none;
+  }
+
+  .texto-sobre-imagem p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
     nav {
-      position: relative;
-      display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 20px;
+      padding: 10px 10px;
     }
 
     .menu {
+      flex: 1;
       display: flex;
-      list-style: none;
-      gap: 20px;
+      justify-content: flex-start;
+      gap: 15px;
       padding: 0;
       margin: 0;
     }
 
     .menu li a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
+      font-size: 0.95rem;
     }
 
     .logo-central {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: 80px;
+      order: 2;
+      position: static;
+      transform: none;
+      height: 50px;
+      margin: 0 auto;
+      margin-right: 15%;
     }
 
     .icone-instagram {
-      color: white;
-      font-size: 24px;
-      text-decoration: none;
-    }
-
-    .titulo {
-      text-align: center;
-      background-color: #fbe7c2;
-      padding: 1rem 0;
+      order: 3;
+      font-size: 20px;
+      margin-left: auto;
     }
 
     .titulo h1 {
-      margin: 0;
-      color: #732d00;
-      font-size: 2rem;
-    }
-
-    .titulo p {
-      margin: 0.3rem 0 0;
-      color: #444;
+      font-size: 1.6rem;
     }
 
     .imagem-container {
-      position: relative;
-      max-width: 90%;
+      max-width: 95%;
       margin: 1rem auto;
-      overflow: hidden;
-      border-radius: 10px;
-    }
-
-    .imagem-container img {
-      width: 100%;
-      max-height: 65vh;
-      object-fit: cover;
-      display: block;
     }
 
     .texto-sobre-imagem {
-      position: absolute;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 0.5rem;
-      width: 100%;
-      text-align: left;
+      position: static;
+      background: transparent;
+      color: #000;
+      padding: 0;
+      margin: 1rem auto;
+      text-align: justify;
+      max-width: 90%;
     }
 
     .texto-sobre-imagem h2 {
-      margin: 0 0 0.5rem;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       border-left: 4px solid #732d00;
       padding-left: 0.5rem;
+      margin-bottom: 0.5rem;
+      color: #732d00;
     }
 
     .texto-sobre-imagem a {
-      color: #fbe7c2;
+      color: #7b2e00;
       text-decoration: none;
     }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
+    .texto-sobre-imagem p {
+      color: #333;
+      line-height: 1.6;
+      text-align: justify;
+    }
   }
+</style>
 
-  .menu {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .menu li a {
-    font-size: 0.95rem;
-  }
-
-  .logo-central {
-    order: 2;
-    position: static;
-    transform: none;
-    height: 50px;
-    margin: 0 auto;
-    margin-right: 15%; 
-  }
-
-  .icone-instagram {
-    order: 3;
-    font-size: 20px;
-    margin-left: auto;
-  }
-
-  .titulo h1 {
-    font-size: 1.6rem;
-  }
-
-  .imagem-container {
-    max-width: 95%;
-    margin: 1rem auto;
-  }
-
-  .texto-sobre-imagem {
-    position: static;
-    background: transparent;
-    color: #000;
-    padding: 0rem;
-    margin-top: 5%;
-    text-align: justify;
-  }
-
-  .texto-sobre-imagem h2 {
-    font-size: 1.2rem;
-    border-left: 4px solid #732d00;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: #732d00;
-  }
-
-  .texto-sobre-imagem a {
-    color: #7b2e00;
-    text-decoration: none;
-  }
-
-  .texto-sobre-imagem p {
-    color: #333;
-    line-height: 1.5;
-    text-align: left;
-  }
-}
-
-  </style>
 </head>
 <body>
   <header>
