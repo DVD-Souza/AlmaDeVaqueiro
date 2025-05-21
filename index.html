@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alma de Vaqueiro</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
   <style>
     body {
       margin: 0;
@@ -13,49 +14,48 @@
     }
 
     header {
-  position: relative;
-  background-color: #7b2e00;
-  padding: 10px 0;
-}
+      position: relative;
+      background-color: #7b2e00;
+      padding: 10px 0;
+    }
 
-nav {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
+    nav {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
 
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
 
-.menu li a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
+    .menu li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-.logo-central {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 80px; /* ajuste conforme necessário */
-}
+    .logo-central {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 80px;
+    }
 
-.icone-instagram {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-}
+    .icone-instagram {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+    }
 
     .titulo {
       text-align: center;
@@ -84,10 +84,9 @@ nav {
 
     .imagem-container img {
       width: 100%;
-      max-height: 65vh; /* ajustado para caber na tela sem scroll */
+      max-height: 65vh;
       object-fit: cover;
       display: block;
-      text-align: justify;
     }
 
     .texto-sobre-imagem {
@@ -95,9 +94,9 @@ nav {
       bottom: 0;
       background: rgba(0, 0, 0, 0.6);
       color: white;
-      padding: 0.3rem;
+      padding: 0.5rem;
       width: 100%;
-      text-align:left;
+      text-align: left;
     }
 
     .texto-sobre-imagem h2 {
@@ -107,24 +106,102 @@ nav {
       padding-left: 0.5rem;
     }
 
-    .texto-sobre-imagem a{
+    .texto-sobre-imagem a {
       color: #fbe7c2;
       text-decoration: none;
     }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  .menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .menu li a {
+    font-size: 0.95rem;
+  }
+
+  .logo-central {
+    order: 2;
+    position: static;
+    transform: none;
+    height: 50px;
+    margin: 0 auto;
+    margin-right: 15%; 
+  }
+
+  .icone-instagram {
+    order: 3;
+    font-size: 20px;
+    margin-left: auto;
+  }
+
+  .titulo h1 {
+    font-size: 1.6rem;
+  }
+
+  .imagem-container {
+    max-width: 95%;
+    margin: 1rem auto;
+  }
+
+  .texto-sobre-imagem {
+    position: static;
+    background: transparent;
+    color: #000;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .texto-sobre-imagem h2 {
+    font-size: 1.2rem;
+    border-left: 4px solid #732d00;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #732d00;
+  }
+
+  .texto-sobre-imagem a {
+    color: #7b2e00;
+    text-decoration: none;
+  }
+
+  .texto-sobre-imagem p {
+    color: #333;
+    line-height: 1.5;
+  }
+}
+
   </style>
 </head>
 <body>
   <header>
-  <nav>
-   <ul class="menu">
+    <nav>
+      <ul class="menu">
         <li><a href="./index.html">Início</a></li>
         <li><a href="./sobre.html">Sobre</a></li>
         <li><a href="./peticao.html">Apoie-nos</a></li>
       </ul>
-    <img src="images/logo.png" alt="Logo" class="logo-central">
-    <a href="https://www.instagram.com/almadevaqueir0?igsh=M241N243ZmdmbTJy" class="icone-instagram"><i class="fa-brands fa-instagram"></i></a>
-  </nav>
-</header>
+      <img src="images/logo.png" alt="Logo" class="logo-central">
+      <a href="https://www.instagram.com/almadevaqueir0?igsh=M241N243ZmdmbTJy" class="icone-instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </nav>
+  </header>
+
   <main>
     <div class="titulo">
       <h1>ALMA DE VAQUEIRO</h1>
@@ -132,19 +209,20 @@ nav {
     </div>
 
     <div class="imagem-container">
-      <img src="images/index.png"Imagem principal" />
+      <img src="images/index.png" alt="Imagem principal" />
       <div class="texto-sobre-imagem">
-        <h1>Bem-vindo ao Alma de Vaqueiro</h1>
-          <p>
-            Este espaço foi criado para valorizar, preservar e compartilhar a rica trajetória do vaqueiro nordestino — figura emblemática da cultura brasileira que, por séculos, tem representado bravura, resistência e sabedoria popular. 
-            Aqui, você encontrara ações que reforçam a importância de seu reconhecimento como patrimônio cultural de natureza nacional.
-          </p>
-          <p>
-            Nosso compromisso é dar visibilidade a essa identidade viva e engajar a sociedade na valorização de uma herança histórica que molda o sertão e inspira o país.
-            <br><br>
-            ➤ <a href="./sobre.html"><b>Conheça mais sobre o projeto</b></a><br>
-            ➤ <a href="./peticao.html"><b>Apoie nossa causa</b></a>
-          </p>
+        <h2>Bem-vindo ao Alma de Vaqueiro</h2>
+        <p>
+          Este espaço foi criado para valorizar, preservar e compartilhar a rica trajetória do vaqueiro nordestino — figura emblemática 
+          da cultura brasileira que, por séculos, tem representado bravura, resistência e sabedoria popular. Aqui, você encontrará ações 
+          que reforçam a importância de seu reconhecimento como patrimônio cultural de natureza nacional.
+        </p>
+        <p>
+          Nosso compromisso é dar visibilidade a essa identidade viva e engajar a sociedade na valorização de uma herança histórica que 
+          molda o sertão e inspira o país.<br><br>
+          ➤ <a href="./sobre.html"><strong>Conheça mais sobre o projeto</strong></a><br>
+          ➤ <a href="./peticao.html"><strong>Apoie nossa causa</strong></a>
+        </p>
       </div>
     </div>
   </main>
