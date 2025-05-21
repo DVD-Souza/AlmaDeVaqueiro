@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alma de Vaqueiro</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8e4c3;
+    }
+
+    header {
+  position: relative;
+  background-color: #7b2e00;
+  padding: 10px 0;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo-central {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px; /* ajuste conforme necessário */
+}
+
+.icone-instagram {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+    .titulo {
+      text-align: center;
+      background-color: #fbe7c2;
+      padding: 1rem 0;
+    }
+
+    .titulo h1 {
+      margin: 0;
+      color: #732d00;
+      font-size: 2rem;
+    }
+
+    .titulo p {
+      margin: 0.3rem 0 0;
+      color: #444;
+    }
+
+    .imagem-container {
+      position: relative;
+      max-width: 90%;
+      margin: 1rem auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .imagem-container img {
+      width: 100%;
+      max-height: 65vh; /* ajustado para caber na tela sem scroll */
+      object-fit: cover;
+      display: block;
+      text-align: justify;
+    }
+
+    .texto-sobre-imagem {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 0.3rem;
+      width: 100%;
+      text-align:left;
+    }
+
+    .texto-sobre-imagem h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+      border-left: 4px solid #732d00;
+      padding-left: 0.5rem;
+    }
+
+    .texto-sobre-imagem a{
+      color: #fbe7c2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <nav>
+   <ul class="menu">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./peticao.html">Apoie-nos</a></li>
+      </ul>
+    <img src="images/logo.png" alt="Logo" class="logo-central">
+    <a href="https://www.instagram.com/almadevaqueir0?igsh=M241N243ZmdmbTJy" class="icone-instagram"><i class="fa-brands fa-instagram"></i></a>
+  </nav>
+</header>
+  <main>
+    <div class="titulo">
+      <h1>ALMA DE VAQUEIRO</h1>
+      <p>Projeto de Extensão Interprofissional - Multiculturalismo</p>
+    </div>
+
+    <div class="imagem-container">
+      <img src="images/index.png"Imagem principal" />
+      <div class="texto-sobre-imagem">
+        <h1>Bem-vindo ao Alma de Vaqueiro</h1>
+          <p>
+            Este espaço foi criado para valorizar, preservar e compartilhar a rica trajetória do vaqueiro nordestino — figura emblemática da cultura brasileira que, por séculos, tem representado bravura, resistência e sabedoria popular. 
+            Aqui, você encontrara ações que reforçam a importância de seu reconhecimento como patrimônio cultural de natureza nacional.
+          </p>
+          <p>
+            Nosso compromisso é dar visibilidade a essa identidade viva e engajar a sociedade na valorização de uma herança histórica que molda o sertão e inspira o país.
+            <br><br>
+            ➤ <a href="./sobre.html"><b>Conheça mais sobre o projeto</b></a><br>
+            ➤ <a href="./peticao.html"><b>Apoie nossa causa</b></a>
+          </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

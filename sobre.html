@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre - Alma de Vaqueiro</title>
+
+  <!-- Fontes e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4e4ca;
+    }
+
+    header {
+      position: relative;
+      background-color: #7b2e00;
+      padding: 10px 0;
+    }
+
+    nav {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .logo-central {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 80px;
+    }
+
+    .icone-instagram {
+      color: white;
+      font-size: 22px;
+      text-decoration: none;
+    }
+
+    main.container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 40px;
+      align-items: stretch;
+    }
+
+    .sobre-projeto {
+      flex: 1.2;
+      background-color: #fff8ed;
+      border-radius: 10px;
+      color: #5a2b0c;
+      line-height: 1.6;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    .sobre-projeto h1 {
+      font-family: 'Special Elite', cursive;
+      color: #7b2e0d;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    .sobre-projeto a {
+      color: #7b2e0d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .sobre-projeto a:hover {
+      text-decoration: underline;
+    }
+
+    .image {
+      flex: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      main.container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .logo-central {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+        height: 50px;
+      }
+
+      .image {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="peticao.html">Apoie-nos</a></li>
+      </ul>
+      <img src="images/logo.png" alt="Logo Alma de Vaqueiro" class="logo-central" />
+      <a href="https://www.instagram.com/almadevaqueir0?igsh=M241N243ZmdmbTJy" class="icone-instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="sobre-projeto">
+      <h1>Sobre o Projeto</h1>
+      <p>
+        O <strong>Alma de Vaqueiro</strong> é um projeto que busca o reconhecimento do vaqueiro como 
+        <strong>patrimônio cultural imaterial nacional</strong>, valorizando sua história, saberes e papel na cultura nordestina.
+      </p>
+      <p>
+        Para isso, promovemos uma <strong>petição online</strong> que mobiliza a sociedade em defesa dessa identidade histórica, 
+        com o objetivo de oficializar esse reconhecimento junto ao IPHAN.
+      </p>
+      <p>
+        Convidamos você a conhecer e apoiar essa causa que valoriza a tradição e a resistência do povo do sertão.
+      </p>
+      <p>
+        ➤ <a href="peticao.html">Apoie a petição agora</a>
+      </p>
+    </section>
+
+    <div class="image">
+      <img src="images/sobre.png" alt="Imagem de um vaqueiro com o gado" />
+    </div>
+  </main>
+
+</body>
+</html>

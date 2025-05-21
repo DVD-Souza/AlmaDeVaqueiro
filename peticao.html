@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petição - Alma de Vaqueiro</title>
+
+  <!-- Fontes e Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f3e3cc;
+    }
+
+    header {
+      position: relative;
+      background-color: #7b2e00;
+      padding: 10px 0;
+    }
+
+    nav {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .logo-central {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 80px;
+    }
+
+    .icone-instagram {
+      color: white;
+      font-size: 22px;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .text-content {
+      flex: 1.2;
+      background-color: #fff8ed;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      color: #5a2b0c;
+    }
+
+    .text-content h1 {
+      font-family: 'Special Elite', cursive;
+      font-size: 26px;
+      color: #7b2e0d;
+      margin-bottom: 16px;
+    }
+
+    .text-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .text-content a {
+      color: #7b2e0d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .text-content a:hover {
+      text-decoration: underline;
+    }
+
+    .petition-box {
+      flex: 1;
+      background-color: #7b2e0d;
+      color: white;
+      border-radius: 10px;
+      padding: 30px;
+      font-size: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      max-width: 300px; /* Limita a largura da caixa */
+      margin: auto;     /* Centraliza a caixa se houver espaço extra */
+    }
+
+    .petition-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: inherit; /* Garante que a imagem siga o arredondamento do container */
+    }
+
+    .petition-box:hover {
+      background-color: #5e2209;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .petition-box {
+        margin-top: 20px;
+      }
+
+      .logo-central {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./peticao.html">Apoie-nos</a></li>
+      </ul>
+      <img src="images/logo.png" alt="Logo" class="logo-central">
+      <a href="https://www.instagram.com/almadevaqueir0?igsh=M241N243ZmdmbTJy" class="icone-instagram"><i class="fa-brands fa-instagram"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="text-content">
+      <h1>Por que sua assinatura importa?</h1>
+      <p>
+        Por trás de cada galope no sertão existe um vaqueiro. Um trabalhador que desafia o sol, o mato e o tempo para manter viva uma tradição que moldou a história do nordeste e do Brasil.
+      </p>
+      <p>
+        Mesmo com sua importância cultural, o vaqueiro ainda <strong>não é reconhecido como patrimônio cultural imaterial nacional</strong>. Isso significa ausência de políticas de proteção e valorização desse saber ancestral.
+      </p>
+      <p>
+        Por isso criamos esta <strong>petição online</strong>. Para exigir respeito, reconhecimento e dignidade a quem carrega nas mãos a história de um povo inteiro.
+      </p>
+      <p>
+        <strong>Assinar é um ato de justiça cultural.</strong>
+        <br><br>
+        ➤ <a href="https://example.com/peticao" target="_blank">Apoie a petição agora</a>
+      </p>
+    </div>
+
+    <div class="petition-box" onclick="window.location.href='https://example.com/peticao';">
+      <img src="./images/realistic.png" alt="Imagem realista do vaqueiro">
+    </div>
+  </main>
+
+</body>
+</html>
